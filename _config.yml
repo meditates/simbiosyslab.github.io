@@ -1,0 +1,17 @@
+# Site settings
+title: SimBioSys Lab
+description: Systems and biology at Emory University
+keywords:
+  - Machine Learning
+  - Neural Networks
+  - Neuroscience
+  - Data Science
+  - Information Retrieval
+baseurl: ""
+url: "http://simbiosyslab.github.io"
+github_username: SimBioSysLab
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+

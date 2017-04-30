@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
+
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip }}{% else %}{{ site.description | strip }}{% endif %}" />
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ", " }}{% else %}{{ site.keywords | join: ", " }}{% endif %}" />
+
+<script async defer src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ "/resources/design/semantic.min.css" | prepend: site.baseurl }}" />
+
+<script async defer type="text/javascript" src="{{ "/resources/design/semantic.min.js" | prepend: site.baseurl }}" ></script>
+<link rel="stylesheet" href="{{ "/resources/design/main.css" | prepend: site.baseurl }}">
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
