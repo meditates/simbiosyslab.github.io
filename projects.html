@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="ui two doubling cards">
+  {% for page in site.posts %}
+  {% if page.title %}
+  <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
+    <div class="content">
+      <div class="header">{{ page.title }}</div>
+      <div class="meta">
+        {{ page.date | date: "%B %-d, %Y" }}
+        {% if page.authors %}
+        | {{ page.authors | join: ", " }}
+        {% endif %}
+      </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>

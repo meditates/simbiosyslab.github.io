@@ -1,9 +1,9 @@
 body {
-    font-size: $base-font-size;
-    font-weight: 300;
-    color: $text-color;
-    -webkit-text-size-adjust: 100%;
-    background-color: $background-color;
+  font-size: $base-font-size;
+  font-weight: 300;
+  color: $text-color;
+  -webkit-text-size-adjust: 100%;
+  background-color: $background-color;
 }
 
 /**
@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-    line-height: $base-line-height;
+  margin-bottom: $spacing-unit / 2;
+  line-height: $base-line-height;
 }
 
 
 h1, h2, h3, h4, h5, h6, div,
 p, blockquote, pre,
 ul, ol, dl, figure {
-    font-family: $base-font-family;
+  font-family: $base-font-family;
 }

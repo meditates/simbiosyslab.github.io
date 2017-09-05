@@ -2,19 +2,17 @@
 <meta name="viewport" content="width=device-width initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+<!-- Site info. -->
 <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
-
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip }}{% else %}{{ site.description | strip }}{% endif %}" />
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ", " }}{% else %}{{ site.keywords | join: ", " }}{% endif %}" />
-
-<script async defer src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="{{ "/resources/design/semantic.min.css" | prepend: site.baseurl }}" />
-
-<script async defer type="text/javascript" src="{{ "/resources/design/semantic.min.js" | prepend: site.baseurl }}" ></script>
-<link rel="stylesheet" href="{{ "/resources/design/main.css" | prepend: site.baseurl }}">
-
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Loads some globally-useful Javascript libraries. -->
+<script defer src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.3/math.min.js"></script>
+<script defer async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+<!-- Loads the Semantic UI components. -->
+<link rel="stylesheet" href="{{ "/resources/design/semantic.min.css" | prepend: site.baseurl }}" />
+<script defer type="text/javascript" src="{{ "/resources/design/semantic.min.js" | prepend: site.baseurl }}" ></script>
+<link rel="stylesheet" href="{{ "/resources/design/main.css" | prepend: site.baseurl }}">

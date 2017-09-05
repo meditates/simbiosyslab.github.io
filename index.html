@@ -1,35 +1,35 @@
 ---
 layout: default
+title: SimBioSys Lab
 ---
 
-<div class="ui segment">
-    <img class="ui small rounded right floated image" src="/resources/design/simbiosyslogo.png"/>
-    <h1 class="ui header">SimBioSys</h1>
-    <p>
-    The Emory Lab for Computational Systems and their Biologial Connections  
-(SimBioSys) is a partnership of researchers exploring the management and
-dissemination of information.  Simbiosys lab is run by Drs. Avani Wildani and
-Ymir Vigfusson, both of whom are Assistant Professors in Math and Computer
-Science.  We are rapidly growing lab and currently support 1 postdoc, 5 PhD
-students, 2 MS students, and 4 dedicated undergraduates as well as several
-visitors and rotation students.  Our current research areas include such wide
-ranging topics as predictive caching, storage system analysis, computer
-security, wireless mesh network optimization, biologically plausible neural networks,
-theory of learning, and disease transmission network models.  
-    </p>
-    
-    
+<div class="ui padded segment">
+  The Emory Lab for Computational Systems and their Biologial Connections (SimBioSys) is a partnership of researchers exploring the management and dissemination of information.  Simbiosys lab is run by Drs. Avani Wildani and Ymir Vigfusson, both of whom are Assistant Professors in Math and Computer Science.  We are rapidly growing lab and currently support 1 postdoc, 5 PhD students, 2 MS students, and 4 dedicated undergraduates as well as several visitors and rotation students.  Our current research areas include such wide ranging topics as predictive caching, storage system analysis, computer security, wireless mesh network optimization, biologically plausible neural networks, theory of learning, and disease transmission network models.
 </div>
 
-<div class="ui container">
-    <div class="ui inverted red segment">
-        News
+<div class="ui three centered doubling cards">
+  {% for advisor in site.advisors %}
+  <a href="{{ advisor.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ advisor.photo }}">
     </div>
-    <div class="ui secondary inverted red segment">
-        Recent Publications
+    <div class="content">
+      <div class="header">{{ advisor.name }}</div>
     </div>
-    <div class="ui tertiary inverted red segment">
-        Events
-    </div>
+  </a>
+  {% endfor %}
 </div>
 
+<div class="ui four centered doubling cards">
+  {% for member in site.members %}
+  <a href="{{ member.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ member.photo }}">
+    </div>
+    <div class="content">
+      <div class="header">{{ member.name }}</div>
+      {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>

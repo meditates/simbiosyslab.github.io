@@ -7,10 +7,14 @@
     {% include header.html %}
 
     <div class="ui main container">
-      {{ content }}
+      <h1 class="ui centered header">{{ page.title }}</h1>
+      <div class="ui hidden divider"></div>
+
+      <div class="ui container">
+        {{ content }}
+      </div>
     </div>
 
     {% include footer.html %}
   </body>
 </html>
-
