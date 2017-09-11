@@ -5,4 +5,7 @@ _site/
 # mac os
 .DS_Store
 
+# misc editors
+*.swp
+.idea/
 
