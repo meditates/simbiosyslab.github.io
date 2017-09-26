@@ -3,7 +3,10 @@ layout: post
 title: Generating Shakespeare
 date: 2017-09-05 12:00:00
 authors:
- - Ben Bolte
+  - Ben Bolte
+keywords:
+  - Recurrent Neural Networks
+  - Language Modeling
 ---
 
 <div class="ui segments">
