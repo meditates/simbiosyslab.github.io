@@ -1,8 +1,9 @@
 ---
 layout: post
+title: the missing dimension in the cache
+date: 2017-09-28 12:00:00
 authors:
   - Jason Yang
-date: "2017-09"
 ---
 
 The missing dimension in the cache 
