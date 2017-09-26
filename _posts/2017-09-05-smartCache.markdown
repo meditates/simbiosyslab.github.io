@@ -1,8 +1,8 @@
 ---
 layout: post
 authors:
-  - Ben Bolte
-date: "2017-09-05 12:00:00"
+  - Jason Yang
+date: "2017-09"
 ---
 
 The missing dimension in the cache 
