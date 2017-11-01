@@ -9,7 +9,7 @@ keywords:
   - pub-sub
 ---
 
-### keywords: publish-subscribe, pub-sub
+### Reza Karimi, Gregory Chockler, Ymir Vigfusson
 
 Increasing number of large scale applications such as online gaming, messaging, social networking which are typically characterized by a large number of participants exchanging messages in a large scale, call for Publish-Subscribe systems that are able to efficiently support a very large set of topics.
  Moreover, the growing number of Internet-connected devices including vehicles,  buildings, home appliances, wearable and mobile devices with large number of built-in sensors and so on, which has a stunning prediction of 50 billion connected devices by 2020, reflects the real need for supporting a huge number of topics by pub-sub systems.
