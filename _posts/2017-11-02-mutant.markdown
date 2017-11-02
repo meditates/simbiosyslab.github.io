@@ -4,11 +4,6 @@ title: Mutant
 date: 2017-11-02 12:00:00
 authors:
   - Hobin Yoon
-  - Jason Yang
-  - Ymir Vigfusson
-  - Sveinn Fannar Kristjansson
-  - Steinn E. Sigurdarson
-  - Ada Gavrilovska
 keywords:
   - NoSQL database
   - Cost-performance trade-offs
@@ -16,7 +11,7 @@ keywords:
   - Cloud storage
 ---
 
-### Keywords: NoSQL database, Cost-performance trade-offs, Cost SLO enforcement, Cloud storage
+#### Hobin Yoon, Jason Yang, Ymir Vigfusson, Sveinn Fannar Kristjansson, Steinn E. Sigurdarson, Ada Gavrilovska
 
 Conventional wisdom in database systems says there is a trade-off between database storage cost and the access latency:
   you can build a low-cost, high-latency database, or a low-latency, high-cost database, but not both.
