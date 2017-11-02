@@ -6,13 +6,17 @@ authors:
   - Hobin Yoon
   - Jason Yang
   - Ymir Vigfusson
+  - Sveinn Fannar Kristjansson
+  - Steinn E.~Sigurdarson
+  - Ada Gavrilovska
 keywords:
-  - NoSQL Database
+  - NoSQL database
   - Cost-performance trade-offs
+  - Cost SLO enforcement
   - Cloud storage
 ---
 
-### Keywords: Cellphone Metadata, Epidemics, Behavior Analysis
+### Keywords: NoSQL database, Cost-performance trade-offs, Cost SLO enforcement, Cloud storage
 
 Throughout history humans have faced many epidemic outbreaks. Early detection and prevention of the spread can significantly reduce the damage a disease can inflict. Current methods of detection, which rely on doctors’ diagnosis of patients, have a significant lag where detection can take weeks. This lag reduces the effectiveness of any prevention of further spread. Our project proposes a new method of outbreak detection which relies on analysis of cellphone metadata. The new method looks at behavioral changes in the metadata for a population to predict the outbreak of a disease.  
 
@@ -23,7 +27,8 @@ The data is from the 2009 outbreak of H1N1 in Iceland, where we have two dataset
     This graph shows the nr. of unique locations users visit on different days around their date of diagnosis. 
   </div>
   <div class="ui segment">
-    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/cdr/unique_locations_visited_bin0.png"/>
+    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/sst-organization.pdf"/>
+    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/sst-organization.png"/>
   </div>
   <div class="ui secondary segment">
     For each day we rank the value to the previous 10 values for the same weekday. The ranking ranges from 0 to 1 where 0 represents the lowest value and 1 the highest. Also, a ranking of 0.5 means that the value should fall in the middle of the 10 values, when ordered.
