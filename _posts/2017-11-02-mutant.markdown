@@ -18,24 +18,19 @@ keywords:
 
 ### Keywords: NoSQL database, Cost-performance trade-offs, Cost SLO enforcement, Cloud storage
 
-Throughout history humans have faced many epidemic outbreaks. Early detection and prevention of the spread can significantly reduce the damage a disease can inflict. Current methods of detection, which rely on doctors’ diagnosis of patients, have a significant lag where detection can take weeks. This lag reduces the effectiveness of any prevention of further spread. Our project proposes a new method of outbreak detection which relies on analysis of cellphone metadata. The new method looks at behavioral changes in the metadata for a population to predict the outbreak of a disease.  
+Conventional wisdom in database systems says there is a trade-off between database storage cost and the access latency:
+  you can build a low-cost, high-latency database, or a low-latency, high-cost database, but not both.
+We present \mutant{}, a layer for LSM-tree cloud data stores that balances this trade-off.
+The key observation is that high temporal locality of web workloads coupled with sequential batching
+  of LSM-tree tablets means that colder data lives on older tablets, allowing them to be moved to colder storage.
+In addition to controlling the cost and access latency trade-off, 
+  our implementation of \mutant{} on top of RocksDB shows that \mutant{} reduces cloud storage costs up to 90\%
+when access latencies are kept fixed, and decreases latencies by 79\% when cloud storage costs are fixed.
 
-The data is from the 2009 outbreak of H1N1 in Iceland, where we have two datasets one containing cellphone metadata and the other dates of diagnosis. Anonymity is preserved through randomly generated user IDs which are used to map between the two datasets.
+<img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/mutant-design-highlevel.png"/>
 
+<!--
 <div class="ui segments">
-  <div class="ui secondary segment">
-    This graph shows the nr. of unique locations users visit on different days around their date of diagnosis. 
-  </div>
-  <div class="ui segment">
-    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/sst-organization.pdf"/>
-    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/sst-organization.png"/>
-  </div>
-  <div class="ui secondary segment">
-    For each day we rank the value to the previous 10 values for the same weekday. The ranking ranges from 0 to 1 where 0 represents the lowest value and 1 the highest. Also, a ranking of 0.5 means that the value should fall in the middle of the 10 values, when ordered.
-    <br>
-    The x-axis shows the relative days around date of diagnosis (DoD) where 0 is DoD. The y-axis shows the mean ranking for all users. The blue line represents infected users and the orange line represents all those who were not infected.
-  </div>
+    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/mutant/mutant-design-highlevel.png"/>
 </div>
-
-
- 
+-->
