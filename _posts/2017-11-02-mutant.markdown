@@ -4,12 +4,12 @@ title: Mutant
 date: 2017-11-02 12:00:00
 authors:
   - Hobin Yoon
-	- Jason Yang
+  - Jason Yang
   - Ymir Vigfusson
 keywords:
   - NoSQL Database
   - Cost-performance trade-offs
-	- Cloud storage
+  - Cloud storage
 ---
 
 ### Keywords: Cellphone Metadata, Epidemics, Behavior Analysis
