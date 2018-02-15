@@ -8,7 +8,7 @@ keywords:
   - Data Mining
   - Cache Modelling
   - Machine Learning
-title: Capture the “Bourgeoisie” in the Cache
+title: Help the Middle Class Citizens in the Cache
 ---
 
 Researches have always treated cache requests equal, however, this is NOT true.
