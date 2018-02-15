@@ -38,10 +38,19 @@ A model that
 
 
 ## Sponsors
-Rannis
-Leverhulme
-Emory Reseaearch Council
-NVIDIA
+
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
+</div>
 
 ## Publications
 
