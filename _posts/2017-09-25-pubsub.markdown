@@ -30,8 +30,8 @@ Our system leverages the idea of filtering out the messages being published into
 ## Sponsors
 
 <div class="ui segments">
-  <img class="ui centered large rounded image" style="width:150px; height:150px;" alt="nsf" src="../resources/images/nsf.png"  />
-  <p class="ui centered" >NSF CAREER #1553579</p>
+  <img class="ui centered large rounded image" style="width:150px; height:150px;" alt="nsf" src="../resources/images/nsf.png"  NSF CAREER #1553579
+  />
     <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
   </div>
 
