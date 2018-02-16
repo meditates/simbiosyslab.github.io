@@ -40,7 +40,7 @@ Our system leverages the idea of filtering out the messages being published into
 
 
 ## People
-<div class="ui segments" style="padding:25px;">
+<div class="ui segments four centered doubling cards" style="padding:25px;">
 
  <a href="https://www.mathcs.emory.edu/~rkarimi/" class="fluid card">
     <div class="image">
@@ -56,7 +56,8 @@ Our system leverages the idea of filtering out the messages being published into
       <img style="width:100px; height:100px; margin-botton:-50px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/>
     </div>
     <div class="content">
-      <div class="header"Gregory Chockler</div>
+      <div class="header">Gregory Chockler</div>
+  Royal Holloway University of London
     </div>
   </a>
   
