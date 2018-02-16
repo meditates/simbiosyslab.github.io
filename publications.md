@@ -1,7 +1,6 @@
 ---
 layout: default
 permalink: Publications
-<!-- title: Publications -->
 ---
 
  
