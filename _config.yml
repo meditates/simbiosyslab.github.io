@@ -70,22 +70,46 @@ members:
     website: http://junchengyang.com/
     photo: /resources/profiles/jason.jpg
     meta: MS student
-  - name: Eli Hanover
-    website: https://www.linkedin.com/in/eli-hanover-1489b5b2/
-    photo: /resources/profiles/eli.jpg
-    meta: BS student
+ # - name: Eli Hanover
+ #   website: https://www.linkedin.com/in/eli-hanover-1489b5b2/
+ #   photo: /resources/profiles/eli.jpg
+ #   meta: BS student
   - name: Thorgeir A. Karlsson
     website: https://www.linkedin.com/in/thorgeirak/
     photo: /resources/profiles/thorgeir.jpg
+    meta: MS student
+    - name: Atli F. Einarsson 
+    website: https://simbiosyslab.github.io
+    photo: /resources/profiles/empty.jpg
+    meta: MS student
+  - name: Lei Zhang
+    website: https://simbiosyslab.github.io
+    photo: /resources/profiles/empty.jpg
+    meta: BS student
+  - name: James Robb
+    website: https://simbiosyslab.github.io
+    photo: /resources/profiles/empty.jpg
+    meta: MS student
+  - name: Sandra Bender
+    website: https://simbiosyslab.github.io
+    photo: /resources/profiles/empty.jpg
+    meta: MS student
+  - name: Julia Oddsdottir
+    website: https://simbiosyslab.github.io
+    photo: /resources/profiles/empty.jpg
     meta: MS student
   - name: Safiyah Bharwani
     website: https://www.linkedin.com/in/safiyah-bharwani-909327a1
     photo: /resources/profiles/safiyah.jpg
     meta: BS student
-  - name: Yuan Li
-    website: https://www.linkedin.com/in/yuan-li-770a64113/
-    photo: /resources/profiles/empty.png
+  - name: Safiyah Bharwani
+    website: https://www.linkedin.com/in/safiyah-bharwani-909327a1
+    photo: /resources/profiles/safiyah.jpg
     meta: BS student
+  #- name: Yuan Li
+  #  website: https://www.linkedin.com/in/yuan-li-770a64113/
+  #  photo: /resources/profiles/empty.png
+  #  meta: BS student
   - name: Si Chen
     website: https://www.linkedin.com/in/si-chen-meditates/
     photo: /resources/profiles/si.jpg
