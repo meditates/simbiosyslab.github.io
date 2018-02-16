@@ -13,7 +13,7 @@ keywords:
   - Storage
   - Key-Value Store
   - CDN
-title: 'Mimircache, the Next Generation Cache Analysis and Simulation Platform'
+title: Mimircache, the Next Generation Cache Analysis and Simulation Platform
 ---
 
 Cache is a major component in the memory hierarchy, which bridges the gap
