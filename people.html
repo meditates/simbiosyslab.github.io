@@ -4,58 +4,48 @@ layout: default
 permalink: people
 ---
 
-<div class="ui doubling" >
 
+<table align="center">
+    <tr>
+        <td>
 
-    <table align="center">
-        <tr>
-            <td>
-
-                  <h3> Professors </h3>
-                  <div class="ui four doubling cards" style="display: flex">
-                    {% for advisor in site.data.people.advisors %}
-                    <a href="{{ advisor.website }}" class="fluid card">
-                      <!-- <div class="image" style="width:50%"> -->
-                      <div class="image">
-                        <img src="{{ advisor.photo }}">
-                      </div>
-                      <div class="content">
-                        <p>{{ advisor.name }}</p>
-                      </div>
-                    </a>
-                    {% endfor %}
+              <h3> Professors </h3>
+              <div class="ui four doubling cards" style="display: flex">
+                {% for advisor in site.data.people.advisors %}
+                <a href="{{ advisor.website }}" class="fluid card">
+                  <!-- <div class="image" style="width:50%"> -->
+                  <div class="image">
+                    <img src="{{ advisor.photo }}">
                   </div>
-
-            </td>
-            <td>
-
-                  <h3> Postdocs and Scientists </h3>
-                  <div class="ui two doubling cards" style="display: flex">
-                    {% for advisor in site.data.people.postdoc %}
-                    <a href="{{ advisor.website }}" class="fluid card">
-                      <!-- <div class="image" style="width:50%"> -->
-                      <div class="image">
-                        <img src="{{ advisor.photo }}">
-                      </div>
-                      <div class="content">
-                        <p>{{ advisor.name }}</p>
-                      </div>
-                    </a>
-                    {% endfor %}
+                  <div class="content">
+                    <p>{{ advisor.name }}</p>
                   </div>
+                </a>
+                {% endfor %}
+              </div>
+
+        </td>
+        <td>
+
+              <h3> Postdocs and Scientists </h3>
+              <div class="ui two doubling cards" style="display: flex">
+                {% for advisor in site.data.people.postdoc %}
+                <a href="{{ advisor.website }}" class="fluid card">
+                  <!-- <div class="image" style="width:50%"> -->
+                  <div class="image">
+                    <img src="{{ advisor.photo }}">
+                  </div>
+                  <div class="content">
+                    <p>{{ advisor.name }}</p>
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
 
 
-            </td>
-        </tr>
-    </table>
-
-
-
-
-<!-- <br><hr> -->
-
-
-</div>
+        </td>
+    </tr>
+</table>
 
 
 

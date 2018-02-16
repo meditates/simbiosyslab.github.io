@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: prospectiveStudent
-title: Prospective Student
+<!-- title: Prospective Student -->
 ---
 
 ### Postdocs

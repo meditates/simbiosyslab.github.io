@@ -1,0 +1,109 @@
+---
+layout: default
+permalink: partners
+<!-- title: Partners -->
+---
+
+
+<div class="ui padded segment" style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 18px;" >
+We have strong ties with other research institutes and industries, here lists our collaborations and our sponsors.
+</div>
+
+
+
+<h2> Our Current Collaborations and Sponsors </h2>
+<h3> Companies </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.partners.current %}
+  {% if member.type == 'company' and member.name %}
+  <a href="{{ member.url }}" class="fluid card">
+    <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+
+    <div class="image" style="background-color: white">
+      <img src="{{ member.logo }}">
+    </div>
+    <div class="content">
+      <div style="text-align: center"><p style="font-size: 18px"> {{ member.name }} </p> </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<h3> Universities </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.partners.current %}
+  {% if member.type == 'university' and member.name %}
+  <a href="{{ member.url }}" class="fluid card">
+    <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+
+    <div class="image" style="background-color: white">
+      <img src="{{ member.logo }}">
+    </div>
+    <div class="content">
+      <div style="text-align: center"><p style="font-size: 18px"> {{ member.name }} </p> </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<h3> Sponsors </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.partners.current %}
+  {% if member.type == 'sponsor' and member.name %}
+  <a href="{{ member.url }}" class="fluid card">
+    <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+
+    <div class="image" style="background-color: white">
+      <img src="{{ member.logo }}">
+    </div>
+    <div class="content">
+      <div style="text-align: center"><p style="font-size: 18px"> {{ member.name }} </p> </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+
+
+<br><hr>
+<h2> Our Past Collaborations and Sponsors </h2>
+<h3> Companies </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.partners.past %}
+  {% if member.type == 'company' and member.name %}
+  <a href="{{ member.url }}" class="fluid card">
+    <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+
+    <div class="image" style="background-color: white">
+      <img src="{{ member.logo }}">
+    </div>
+    <div class="content">
+      <div style="text-align: center"><p style="font-size: 18px"> {{ member.name }} </p> </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<h3> Universities </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.partners.past %}
+  {% if member.type == 'university' and member.name %}
+  <a href="{{ member.url }}" class="fluid card">
+    <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+
+    <div class="image" style="background-color: white">
+      <img src="{{ member.logo }}">
+    </div>
+    <div class="content">
+      <div style="text-align: center"><p style="font-size: 18px"> {{ member.name }} </p> </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+

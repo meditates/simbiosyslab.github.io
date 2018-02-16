@@ -1,0 +1,101 @@
+
+
+# Build settings
+markdown: kramdown
+permalink: /:partners
+
+
+# convert               \
+#       input.png       \
+#      -background none \
+#      -gravity center  \
+#      -extent 200x200  \
+#       output.png
+
+current:
+  - type: university
+    name:
+    logo:
+    desc:
+    url:
+
+  - type: company
+    name:
+    logo:
+    desc:
+    url:
+
+  - type: sponsor
+    name:
+    logo:
+    desc:
+    url:
+
+  - type: company
+    name: Akamai
+    logo: /resources/partners/akamai.png
+    desc:
+    url:
+
+  - type: company
+    name: CachePhysics
+    logo: /resources/partners/cloudPhysics.png
+    desc:
+    url:
+
+  - type: company
+    name: Quizup
+    logo: /resources/partners/quizup.png
+    desc:
+    url:
+
+  - type: company
+    name: Spotify
+    logo: /resources/partners/spotify.png
+    desc:
+    url:
+
+  - type: company
+    name: Facebook
+    logo: /resources/partners/fb.png
+    desc:
+    url:
+
+  - type: sponsor
+    name: Emory University
+    logo: /resources/partners/emory.png
+    desc:
+    url:
+
+  - type: sponsor
+    name: NSF
+    logo: /resources/partners/nsf.png
+    desc:
+    url:
+
+  - type: sponsor
+    name: Nvidia
+    logo: /resources/partners/nvidia.png
+    desc:
+    url:
+
+  - type: sponsor
+    name: Rannis
+    logo: /resources/partners/rannis.png
+    desc:
+    url:
+
+
+
+past:
+  - type: university
+    name: Mehash @ Yale
+    logo: /resources/partners/yale.png
+    desc:
+    url:
+
+  - type: company
+    name: CloudPhysics
+    logo: /resources/partners/cloudPhysics.png
+    desc:
+    url:
