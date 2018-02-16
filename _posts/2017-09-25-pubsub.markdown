@@ -9,16 +9,12 @@ keywords:
   - pub-sub
 ---
 
-<h3><a href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a>, <a href="http://www.gchockler.com/">Gregory Chockler</a>, <a href="https://ymsir.com">Ymir Vigfusson</a></h3>
 
 ## What is it?
 
 Increasing number of large scale applications such as online gaming, messaging, social networking which are typically characterized by a large number of participants exchanging messages in a large scale, call for Publish-Subscribe systems that are able to efficiently support a very large set of topics.
  Moreover, the growing number of Internet-connected devices including vehicles,  buildings, home appliances, wearable and mobile devices with large number of built-in sensors and so on, which has a stunning prediction of 50 billion connected devices by 2020, reflects the real need for supporting a huge number of topics by pub-sub systems.
 Our system leverages the idea of filtering out the messages being published into topics without any subscribers in order to utilize the resources to deliver the messages published to topics which are of interest. Also, it employs a hybrid memory/disk scheme to store the messages to avoid the slowdown caused by binding to disks. 
-
-## Approach
-
 
 
 ## Publications
