@@ -1,7 +1,7 @@
 ---
 layout: default
 title:
-permalink: Publications
+permalink: publications.html
 ---
 
  

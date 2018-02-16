@@ -1,7 +1,7 @@
 ---
 layout: default
 title:
-permalink: prospectiveStudent
+permalink: prospectiveStudent.html
 ---
 
 ### Postdocs
