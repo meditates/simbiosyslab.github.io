@@ -6,12 +6,20 @@ authors:
   - Jason Yang
 keywords:
   - Smart Cache
+  - Cache Similarity
+  - Cache Intelligence
   - Time-based Cache Behavior
-  - Key-Value Store
   - CDN
 ---
 
-### keywords: Cache, Time-based Cache Behavior, Key-Value Store, CDN
+
+Cache behavior changes much faster than you thought.
+
+
+
+
+
+
 
 Cache is a major component in the memory hierarchy, which bridges the gap between fast computing devices and slow storage devices. A considerable amount of effort has been devoted to improving cache performance. However, due to high computation overhead, research in the past overlooked the time dimension of cache and focused more on the static modeling and analysis of cache. In fact, we noticed that cache behavior varies with time, and we can see phase change and diurnal patterns in the storage traces and CDN cache traces. One example figure is below:
 
