@@ -25,6 +25,7 @@ Our system leverages the idea of filtering out the messages being published into
 
 <div class="ui segments">
   <img class="ui centered large rounded image" style="width:80%;" alt="pubsub-poster" src="../resources/images/pubsub-poster.png"  />
+  </div>
 
 ## Sponsors
 
