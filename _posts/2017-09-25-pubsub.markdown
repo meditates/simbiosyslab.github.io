@@ -9,7 +9,7 @@ keywords:
   - pub-sub
 ---
 
-### Reza Karimi, Gregory Chockler, Ymir Vigfusson
+<h3><a href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a>, <a href="http://www.gchockler.com/">Gregory Chockler</a>, <a href="https://ymsir.com">Ymir Vigfusson</a></h3>
 
 ## What is it?
 
@@ -17,34 +17,33 @@ Increasing number of large scale applications such as online gaming, messaging, 
  Moreover, the growing number of Internet-connected devices including vehicles,  buildings, home appliances, wearable and mobile devices with large number of built-in sensors and so on, which has a stunning prediction of 50 billion connected devices by 2020, reflects the real need for supporting a huge number of topics by pub-sub systems.
 Our system leverages the idea of filtering out the messages being published into topics without any subscribers in order to utilize the resources to deliver the messages published to topics which are of interest. Also, it employs a hybrid memory/disk scheme to store the messages to avoid the slowdown caused by binding to disks. 
 
-## How does it work?
+## Approach
 
-Increasing number of large scale applications such as online gaming, messaging, social networking which are typically characterized by a large number of participants exchanging messages in a large scale, call for Publish-Subscribe systems that are able to efficiently support a very large set of topics.
- Moreover, the growing number of Internet-connected devices including vehicles,  buildings, home appliances, wearable and mobile devices with large number of built-in sensors and so on, which has a stunning prediction of 50 billion connected devices by 2020, reflects the real need for supporting a huge number of topics by pub-sub systems.
-Our system leverages the idea of filtering out the messages being published into topics without any subscribers in order to utilize the resources to deliver the messages published to topics which are of interest. Also, it employs a hybrid memory/disk scheme to store the messages to avoid the slowdown caused by binding to disks. 
 
-<table>
-    <tr>
-      <td><a href="">Download</a></td>
-      <td>Download the code</td>
-    </tr>
-    <tr>
-      <td><a href="">Approach</a></td>
-      <td>An overview of the system design. </td>
-    </tr>
-    <tr>
-      <td><a href="">Papers</a></td>
-      <td>Paper trail.</td>
-    </tr>
-    <tr>
-      <td><a href="">Support</a></td>
-      <td>Our sources of research support.</td>
-    </tr>
-    <tr>
-      <td><a href="">People</a></td>
-      <td>Project members.</td>
-    </tr>
-</table>
+
+## Publications
+
+
+
+## Support
+
+<div class="ui segments">
+  <img class="ui centered large rounded image"  alt="nsf" src="../resources/images/nsf.png"  />
+  NSF CAREER #1553579
+</div>
+  <div class="ui segments">
+    <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
+  </div>
+
+
+
+## People
+<img style="width:100px; height:100px; position: absolute; 
+ top: 0 !important; 
+ left: 0 !important; 
+ border-radius: 100% !important" src="../resources/profiles/reza.jpg"/> <a href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a><br/>
+<a href="http://www.gchockler.com/">Gregory Chockler</a><br/>
+<a href="https://ymsir.com">Ymir Vigfusson</a><br/>
 
 
 
