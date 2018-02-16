@@ -19,95 +19,11 @@ github_username: SimBioSysLab
 markdown: kramdown
 permalink: /:title
 
-# Lab members.
-advisors:
-  - name: Avani Wildani
-    website: http://www.mathcs.emory.edu/~avani/
-    photo: /resources/profiles/avani.jpg
-  - name: Ymir Vigfusson
-    website: http://www.ymsir.com/
-    photo: /resources/profiles/ymir.jpg
-
-# Adding yourself to the lab website:
-#
-# 1. Convert your picture to a 400x400 thumbnail. This can be done with
-#    ImageMagick via:
-#
-# convert \
-#   -define jpeg:size=400x400 \
-#   pic.jpg \
-#   -thumbnail 400x400^ \
-#   -gravity center \
-#   -extent 400x400 \
-#   thumbnail.jpg
-#
-# Having a 400x400 thumbnail is important because otherwise it will make
-# everyone's photos look goofy. You should put it in /resources/profiles.
-#
-# 2. Update the list below to include yourself.
-members:
-  - name: Rebecca Mitchell
-    website: https://www.researchgate.net/profile/Rebecca_Mitchell
-    photo: /resources/profiles/empty.png
-    meta: Affiliated Faculty
-  - name: Derek Onken
-    website: http://www.mathcs.emory.edu/~donken/
-    photo: /resources/profiles/derek.jpg
-    meta: PhD student
-  - name: Sergio Gramacho
-    website: https://www.linkedin.com/in/gramacho/
-    photo: /resources/profiles/sergio.jpg
-    meta: PhD student
-  - name: Reza Karimi
-    website: http://www.mathcs.emory.edu/~rkarimi/
-    photo: /resources/profiles/reza.jpg
-    meta: PhD student
-  - name: Hobin Yoon
-    website: https://www.cc.gatech.edu/~hyoon45/
-    photo: /resources/profiles/hobin.jpg
-    meta: PhD student
-  - name: Juncheng Yang
-    website: http://junchengyang.com/
-    photo: /resources/profiles/jason.jpg
-    meta: MS student
- # - name: Eli Hanover
- #   website: https://www.linkedin.com/in/eli-hanover-1489b5b2/
- #   photo: /resources/profiles/eli.jpg
- #   meta: BS student
-  - name: Thorgeir A. Karlsson
-    website: https://www.linkedin.com/in/thorgeirak/
-    photo: /resources/profiles/thorgeir.jpg
-    meta: MS student
-  - name: Atli F. Einarsson 
-    website: https://simbiosyslab.github.io
-    photo: /resources/profiles/empty.png
-    meta: MS student
-  - name: Lei Zhang
-    website: https://simbiosyslab.github.io
-    photo: /resources/profiles/empty.png
-    meta: BS student
-  - name: James Robb
-    website: http://www.jamesrobb.ca
-    photo: /resources/profiles/jamesrobb.png
-    meta: BS student
-  - name: Sandra Bender
-    website: https://simbiosyslab.github.io
-    photo: /resources/profiles/empty.png
-    meta: MS student
-  - name: Julia Oddsdottir
-    website: https://simbiosyslab.github.io
-    photo: /resources/profiles/empty.png
-    meta: MS student
-  - name: Safiyah Bharwani
-    website: https://www.linkedin.com/in/safiyah-bharwani-909327a1
-    photo: /resources/profiles/safiyah.jpg
-    meta: BS student
-  #- name: Yuan Li
-  #  website: https://www.linkedin.com/in/yuan-li-770a64113/
-  #  photo: /resources/profiles/empty.png
-  #  meta: BS student
-  - name: Si Chen
-    website: https://www.linkedin.com/in/si-chen-meditates/
-    photo: /resources/profiles/si.jpg
-    meta: PhD student
-
+sections:
+  - News
+  - Home
+  - People
+  - Projects
+  - Publications
+  - Partners
+  - Prospective Student

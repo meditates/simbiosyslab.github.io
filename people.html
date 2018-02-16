@@ -1,0 +1,127 @@
+---
+layout: default
+title: SimBioSys Lab Member
+permalink: people
+---
+
+<div class="ui doubling" >
+
+
+    <table align="center">
+        <tr>
+            <td>
+
+                  <h3> Professors </h3>
+                  <div class="ui four doubling cards" style="display: flex">
+                    {% for advisor in site.data.people.advisors %}
+                    <a href="{{ advisor.website }}" class="fluid card">
+                      <!-- <div class="image" style="width:50%"> -->
+                      <div class="image">
+                        <img src="{{ advisor.photo }}">
+                      </div>
+                      <div class="content">
+                        <p>{{ advisor.name }}</p>
+                      </div>
+                    </a>
+                    {% endfor %}
+                  </div>
+
+            </td>
+            <td>
+
+                  <h3> Postdocs and Scientists </h3>
+                  <div class="ui two doubling cards" style="display: flex">
+                    {% for advisor in site.data.people.postdoc %}
+                    <a href="{{ advisor.website }}" class="fluid card">
+                      <!-- <div class="image" style="width:50%"> -->
+                      <div class="image">
+                        <img src="{{ advisor.photo }}">
+                      </div>
+                      <div class="content">
+                        <p>{{ advisor.name }}</p>
+                      </div>
+                    </a>
+                    {% endfor %}
+                  </div>
+
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+<!-- <br><hr> -->
+
+
+</div>
+
+
+
+
+<br><hr>
+<h3> Ph.D. Students </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.people.phd %}
+  <a href="{{ member.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ member.photo }}">
+    </div>
+    <div class="content">
+      <div>{{ member.name }}</div>
+      <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<br><hr>
+<h3> M.S. Students </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.people.ms %}
+  <a href="{{ member.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ member.photo }}">
+    </div>
+    <div class="content">
+      <div>{{ member.name }}</div>
+      <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+
+<br><hr>
+<h3> Undergraduate Students </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.people.ugrad %}
+  <a href="{{ member.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ member.photo }}">
+    </div>
+    <div class="content">
+      <div>{{ member.name }}</div>
+      <!-- {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %} -->
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<br><hr>
+<h3> Alumni </h3>
+<div class="ui eight doubling cards">
+  {% for member in site.data.people.alumni %}
+  <a href="{{ member.website }}" class="fluid card">
+    <div class="image">
+      <img src="{{ member.photo }}">
+    </div>
+    <div class="content">
+      <div >{{ member.name }}</div>
+      {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+

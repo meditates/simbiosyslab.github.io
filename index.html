@@ -1,47 +1,59 @@
 ---
 layout: default
 title: SimBioSys Lab
+permalink: index
 ---
 
-<div class="ui padded segment" style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 18px;" >
-  The <strong>Emory Lab for Computational Systems and their Biologial Connections (SimBioSys)</strong> is a partnership of researchers studying algorithms and <strong>sim</strong>ulations in the domains and intersections of <strong>bio</strong>logical application and networked <strong>sys</strong>tems.
-Our projects span <a href="smart-cache/">smarter caches</a>, <a href="cdr/">computational epidemiology</a>, storage system analysis, <a href="https://adversary.io">computer security</a>, wireless mesh network optimization, biologically plausible neural networks and the theory of learning.<br>
 
-The Principal Investigators of SimBioSys are Profs. <a href="http://www.mathcs.emory.edu/~avani">Avani Wildani</a> and <a href="http://www.ymsir.com/">Ymir Vigfusson</a> from the <a href="http://csi.mathcs.emory.edu/">Emory CSI</a> program.  
+<table>
+  <tr>
+    <td colspan="3">
+      <div class="ui padded segment" style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 18px;" >
+        The <strong>Emory Lab for Computational Systems and their Biologial Connections (SimBioSys)</strong> is a partnership of researchers studying algorithms and <strong>sim</strong>ulations in the domains and intersections of <strong>bio</strong>logical application and networked <strong>sys</strong>tems.
+      Our projects span <a href="smart-cache/">smarter caches</a>, <a href="cdr/">computational epidemiology</a>, storage system analysis, <a href="https://adversary.io">computer security</a>, wireless mesh network optimization, biologically plausible neural networks and the theory of learning.<br>
 
-</div>
+      The Principal Investigators of SimBioSys are Profs. <a href="http://www.mathcs.emory.edu/~avani">Avani Wildani</a> and <a href="http://www.ymsir.com/">Ymir Vigfusson</a> from the <a href="http://csi.mathcs.emory.edu/">Emory CSI</a> program.
+      </div>
 
-<div class="ui four centered doubling cards">
-  {% for advisor in site.advisors %}
-  <a href="{{ advisor.website }}" class="fluid card">
-    <div class="image">
-      <img src="{{ advisor.photo }}">
-    </div>
-    <div class="content">
-      <div class="header">{{ advisor.name }}</div>
-    </div>
-  </a>
-  {% endfor %}
-</div>
+    </td>
+  </tr>
 
-<div class="ui five centered doubling cards">
-  {% for member in site.members %}
-  <a href="{{ member.website }}" class="fluid card">
-    <div class="image">
-      <img src="{{ member.photo }}">
-    </div>
-    <div class="content">
-      <div class="header">{{ member.name }}</div>
-      {% if member.meta %}<div class="meta">{{ member.meta }}</div>{% endif %}
-    </div>
-  </a>
-  {% endfor %}
-</div>
+
+  <tr>
+    <td colspan="2" style="padding-top: 24px; padding-right: 120px; padding-left: 24px; text-align: left; vertical-align: top;">
+
+      <h2 style="font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif,Lato; "> News and Events </h2>
+      <div class="ui">
+        <ul>
+        {% for news in site.data.news.newslist %}
+        {% if news.desc %}
+          <li> <p> {{ news.date }} &nbsp;&nbsp;&nbsp; {{ news.desc }} </p>  </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      </div>
+
+      <div class="ui padded" style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 18px;">
+        <img style="display:block; width: 100%;" src="/resources/people/group.jpg">
+
+    </td>
+    <td>
+
 <br/>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <div  style="width: 300px; height: 500px;overflow: scroll;   overflow-y: scroll; max-height: 500px; ">
-<a class="twitter-timeline" 
+<a class="twitter-timeline"
   href="https://twitter.com/YVigfusson">
 Tweets by @YVigfusson
 </a>
 </div>
+
+    </td>
+  </tr>
+
+
+</table>
+
+
+
+

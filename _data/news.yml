@@ -1,0 +1,35 @@
+
+
+# Build settings
+markdown: kramdown
+permalink: /:news
+
+
+
+
+newslist:
+  - event:
+    loc:
+    date: 03/12/2018
+    person: Prof. Ymir Vigfusson
+    desc: <b> Prof. Ymir Vigfusson </b> gave a tutorial at <b> NVME'18 </b> in UCSD.
+
+  - event:
+    loc:
+    date: 02/14/2018
+    person: Prof. Ymir Vigfusson
+    desc: <b> Prof. Ymir Vigfusson </b> talked at <b> FAST'18 </b> Tutorial on "Caches for the Persistent Memory and Flash Era".
+
+  - event:
+    loc:
+    date: 02/14/2018
+    person: <b> Pranav Bhandari </b>
+    desc: <b> Pranav Bhandari </b> presented at <b>FAST'18 </b> on "Automated Metric Extractor for Filesystem Traces".
+
+
+oldnewslist:
+  - event:
+    loc:
+    date: 03/12/2018
+    person: Prof. Ymir Vigfusson
+    desc: Prof. Ymir Vigfusson gave a tutorial at NVME'18 in UCSD.
