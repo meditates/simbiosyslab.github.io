@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: partners
-title: Partners
+<!-- title: Partners -->
 ---
 
 We have strong ties with other research institutes and industries, here lists
