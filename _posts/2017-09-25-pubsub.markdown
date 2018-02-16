@@ -31,7 +31,10 @@ Our system leverages the idea of filtering out the messages being published into
 
 <div class="ui segments">
   <img class="ui centered large rounded image" style="width:150px; height:150px;" alt="nsf" src="../resources/images/nsf.png"/>
-  <span class="ui centered large rounded">NSF CAREER #1553579</span>
+  <div class="ui centered large">NSF CAREER #1553579</div>
+  </div>
+  <div class="ui segments">
+  
     <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
   </div>
 
@@ -39,9 +42,9 @@ Our system leverages the idea of filtering out the messages being published into
 
 ## People
 <div class="ui segments" style="padding:25px;">
-<img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/reza.jpg"/> <a href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a><br/>
-<img style="width:100px; height:100px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/> <a href="http://www.gchockler.com/">Gregory Chockler</a><br/>
-<img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/ymir.jpg"/> <a href="https://ymsir.com">Ymir Vigfusson</a><br/>
+<img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/reza.jpg"/> <a style="padding-bottom:35px; padding-left:20px;" href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a><br/>
+<img style="width:100px; height:100px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/> <a style="padding-bottom:35px; padding-left:20px;" href="http://www.gchockler.com/">Gregory Chockler</a><br/>
+<img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/ymir.jpg"/> <a style="padding-bottom:35px; padding-left:20px;" href="https://ymsir.com">Ymir Vigfusson</a><br/>
 </div>
 
 
