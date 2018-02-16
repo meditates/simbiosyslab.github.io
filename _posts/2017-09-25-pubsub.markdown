@@ -41,7 +41,7 @@ Our system leverages the idea of filtering out the messages being published into
 
 ## People
 <div class="ui segments" style="padding:25px;">
-<img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/reza.jpg"/> <a style=" padding-left:20px;" href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a><br/>
+<img style="width:100px; height:100px; margin-botton:-50px; border-radius: 100% !important" src="../resources/profiles/reza.jpg"/> <a style=" padding-left:20px; padding-bottom: 50px;" href="https://www.mathcs.emory.edu/~rkarimi/">Reza Karimi</a><br/>
 <img style="width:100px; height:100px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/> <a style="padding-left:20px;" href="http://www.gchockler.com/">Gregory Chockler</a><br/>
 <img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/ymir.jpg"/> <a style=" padding-left:20px;" href="https://ymsir.com">Ymir Vigfusson</a><br/>
 </div>
