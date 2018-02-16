@@ -17,16 +17,11 @@ keywords:
 
 ## What is it?
 
-Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza#cite_note-TenThings-9) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detailed records provided by Siminn, Iceland's largest mobile network operator, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
+Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detailed records provided by Siminn, Iceland's largest mobile network operator, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
 
 ## Our Goal
 
-A model that
-- Estimates number of infected individuals in the population
-- Runs in near real-time
-- uses passively collected phone metadata
-- is trained on clinical diagnosis, not self-diagnosis
-
+The goal of this project is to improve the state of the art in epidemic surveillance. It uses passively collected cell phone metadata as a near real-time source of behavioral markers. This projects builds on a dataset which links individuals phone data with verified diagnosis data.
 
 ## Approach
 
@@ -38,33 +33,7 @@ To control for these influences, we compare each individual's extracted feature 
 
 
 
-
-## Sponsors
-
-
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
-</div>
-
-
 ## Publications
-
-
-Specifically, diagnosed individuals move less, talk longer, and make fewer phone calls in the few days around their diagnosis.
-
-
-
-
-<!--The data is from the 2009 outbreak of H1N1 in Iceland, where we have two datasets one containing cellphone metadata and the other dates of diagnosis. Anonymity is preserved through randomly generated user IDs which are used to map between the two datasets.-->
 
 <div class="ui segments">
   <div class="ui secondary segment">
@@ -82,3 +51,18 @@ Specifically, diagnosed individuals move less, talk longer, and make fewer phone
 
 
  
+
+## Sponsors
+
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
+</div>
