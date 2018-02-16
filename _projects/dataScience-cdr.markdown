@@ -1,5 +1,7 @@
 ---
 layout: post
+type: dataScience
+abstract:
 title: Predicting Epidemics Through Cellphone Metadata
 date: 2017-06-1 12:00:00
 authors:
@@ -37,10 +39,10 @@ To control for these influences, we compare each individual's extracted feature 
 
 <div class="ui segments">
   <div class="ui secondary segment">
-    This graph shows the nr. of unique locations users visit on different days around their date of diagnosis. 
+    This graph shows the nr. of unique locations users visit on different days around their date of diagnosis.
   </div>
   <div class="ui segment">
-    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/posts/cdr/unique_locations_visited_bin0.png"/>
+    <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/projects/cdr/unique_locations_visited_bin0.png"/>
   </div>
   <div class="ui secondary segment">
     For each day we rank the value to the previous 10 values for the same weekday. The ranking ranges from 0 to 1 where 0 represents the lowest value and 1 the highest. Also, a ranking of 0.5 means that the value should fall in the middle of the 10 values, when ordered.
@@ -55,14 +57,14 @@ To control for these influences, we compare each individual's extracted feature 
 ## Sponsors
 
 <div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
+  <img class="ui centered large rounded image" src="../resources/projects/cdr/Nvidia.png"/>
 </div>
 <div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
+  <img class="ui centered large rounded image" src="../resources/projects/cdr/Leverhulme.jpg"/>
 </div>
 <div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
+  <img class="ui centered large rounded image" src="../resources/projects/cdr/emory.png"/>
 </div>
 <div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
+  <img class="ui centered large rounded image" src="../resources/projects/cdr/rannis.jpg"/>
 </div>

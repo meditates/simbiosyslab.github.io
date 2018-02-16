@@ -1,5 +1,7 @@
 ---
 layout: post
+type: cache
+abstract:
 title: Predictive Cache
 date: 2018-02-14 12:00:00
 authors:

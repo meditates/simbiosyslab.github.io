@@ -1,5 +1,7 @@
 ---
 layout: post
+type: cache
+abstract: the Next Generation Cache Analysis and Simulation Platform
 authors:
   - Jason Yang
 date: '2018-02-14 12:00:00'
@@ -13,7 +15,7 @@ keywords:
   - Storage
   - Key-Value Store
   - CDN
-title: Mimircache, the Next Generation Cache Analysis and Simulation Platform
+title: Mimircache
 ---
 
 Cache is a major component in the memory hierarchy, which bridges the gap
@@ -27,7 +29,7 @@ workload, we design Mimircache.
 
  
 
-What is Mimircache 
+What is Mimircache
 -------------------
 
 Mimircache is the name for two platforms, PyMimircache and CMimircache, both
@@ -39,7 +41,7 @@ much simple interface. The website of Mimircache is at
 
  
 
-Philosolphy of Mimircache 
+Philosolphy of Mimircache
 --------------------------
 
 -   Performance
@@ -50,7 +52,7 @@ Philosolphy of Mimircache
 
  
 
-Features of Mimircache 
+Features of Mimircache
 -----------------------
 
 -   Static analysis: computation and visualization of different cache
@@ -67,7 +69,7 @@ Features of Mimircache
 
  
 
-Roadmap 
+Roadmap
 --------
 
 -   **Feature**: Add sampling layer for all profilers (v0.8.0)

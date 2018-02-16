@@ -1,5 +1,6 @@
 ---
 layout: post
+type: system
 title: Blind Source Separation study in I/O classification
 date: 2017-11-14 12:00:00
 authors:

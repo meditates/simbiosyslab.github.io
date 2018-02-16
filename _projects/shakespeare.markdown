@@ -1,5 +1,6 @@
 ---
 layout: post
+type: other
 title: Generating Shakespeare
 date: 2017-09-05 12:00:00
 authors:
@@ -66,4 +67,4 @@ Recurrent neural networks are usually a good class of functions for this type of
 
 <!-- Loads the Keras JS and run scripts (defers until everything else is loaded). -->
 <script defer src="/resources/static/js/keras.js"></script>
-<script defer src="/resources/posts/shakespeare/sequence.js"></script>
+<script defer src="/resources/projects/shakespeare/sequence.js"></script>

@@ -1,5 +1,7 @@
 ---
 layout: post
+type: cache
+abstract:
 authors:
   - Jason Yang
 date: '2018-02-14 12:00:00'
@@ -51,7 +53,7 @@ can prefetch the other if we see one of them. Based on this idea, Mithril uses a
 fast timestamp-based-comparison to discover associations in an approximately way
 online.
 
-<img class="ui centered large rounded image" style="width: 640px; height: 300px;" src="../resources/posts/cache/Mithril.png"/>
+<img class="ui centered large rounded image" style="width: 640px; height: 300px;" src="../resources/projects/cache/Mithril.png"/>
 
 
 Mithril2 is an enhanced version of Mithril, it is based on the observation of

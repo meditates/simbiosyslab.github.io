@@ -1,20 +1,16 @@
 ---
 layout: default
-permalink: projects.html
+permalink: /projects/index.html
 ---
 
+<h2> Smart Cache </h2>
 <div class="ui two doubling cards">
-  {% for page in site.posts %}
-  {% if page.title %}
+  {% for page in site.projects %}
+  {% if page.title and page.type == 'cache' %}
   <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
     <div class="content">
       <div class="header">{{ page.title }}</div>
-      <div class="meta">
-        {{ page.date | date: "%B %-d, %Y" }}
-        {% if page.authors %}
-        | {{ page.authors | join: ", " }}
-        {% endif %}
-      </div>
+      {% if page.abstract %} <div class="meta"> {{ page.abstract }} </div> {% endif %}
     </div>
   </a>
   {% endif %}
@@ -22,21 +18,15 @@ permalink: projects.html
 </div>
 
 
-<hr/><br/>
-<h2> Smart Cache <h2>
-
+<br> <hr/><br/>
+<h2> System and Databases </h2>
 <div class="ui two doubling cards">
-  {% for page in site.posts.cache %}
-  {% if page.title %}
+  {% for page in site.projects %}
+  {% if page.title and page.type == 'system' or page.type == 'database' %}
   <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
     <div class="content">
       <div class="header">{{ page.title }}</div>
-      <div class="meta">
-        {{ page.date | date: "%B %-d, %Y" }}
-        {% if page.authors %}
-        | {{ page.authors | join: ", " }}
-        {% endif %}
-      </div>
+      {% if page.abstract %} <div class="meta"> {{ page.abstract }} </div> {% endif %}
     </div>
   </a>
   {% endif %}
@@ -44,34 +34,53 @@ permalink: projects.html
 </div>
 
 
-<hr/><br/>
-<h2> Distributed System and Databases <h2>
-
-
-
-
-
 
 
 
 <hr/><br/>
-<h2> Storage Systems <h2>
+<h2> Data Science </h2>
+<div class="ui two doubling cards">
+  {% for page in site.projects %}
+  {% if page.title and page.type == 'dataScience' %}
+  <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
+    <div class="content">
+      <div class="header">{{ page.title }}</div>
+      {% if page.abstract %} <div class="meta"> {{ page.abstract }} </div> {% endif %}
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
 
 
-
-
-
+<!-- <hr/><br/>
+<h2> Simulations </h2>
+<div class="ui two doubling cards">
+  {% for page in site.projects %}
+  {% if page.title and page.type == 'simulation' %}
+  <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
+    <div class="content">
+      <div class="header">{{ page.title }}</div>
+      {% if page.abstract %} <div class="meta"> {{ page.abstract }} </div> {% endif %}
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+ -->
 
 <hr/><br/>
-<h2> Data Science <h2>
-
-
-
-<hr/><br/>
-<h2> Simulations <h2>
-
-
-
-<hr/><br/>
-<h2> Student Side Project <h2>
+<h2> Student Side Project </h2>
+<div class="ui two doubling cards">
+  {% for page in site.projects %}
+  {% if page.title and page.type == 'other' %}
+  <a href="{{ page.url | prepend: site.baseurl }}" class="ui card">
+    <div class="content">
+      <div class="header">{{ page.title }}</div>
+      {% if page.abstract %} <div class="meta"> {{ page.abstract }} </div> {% endif %}
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
 

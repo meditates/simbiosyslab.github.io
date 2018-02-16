@@ -19,6 +19,12 @@ github_username: SimBioSysLab
 markdown: kramdown
 permalink: /:title
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path
+
+
 # sections:
 #   - News
 #   - Home
