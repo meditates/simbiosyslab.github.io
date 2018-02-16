@@ -17,50 +17,23 @@ keywords:
 
 ## What is it?
 
-Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza#cite_note-TenThings-9) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detailed records provided by Siminn, Iceland's largest mobile network operator, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
+Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detailed records provided by Siminn, Iceland's largest mobile network operator, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
 
 ## Our Goal
 
-A model that
-- Estimates number of infected individuals in the population
-- Runs in near real-time
-- uses passively collected phone metadata
-- is trained on clinical diagnosis, not self-diagnosis
-
+The goal of this project is to improve the state of the art in epidemic surveillance. It uses passively collected cell phone metadata as a near real-time source of behavioral markers. This projects builds on a dataset which links individuals phone data with verified diagnosis data.
 
 ## Approach
 
-FrWe observe a seasonal effect in the Icelandic data. People move about less in the colder months. Additionally, 
+We have cellphone metadata from Siminn, the largest mobile network operator in Iceland, during the 2009 H1N1 pandemic. CHS-CDC, Iceland's centralized healthcare system, recorded all diagnoses for Influenza-like Illness. Iceland's Data Protection Authority (Personuvernd) performed a double-blind join on the data to preserve anonymity of users. Siminn covered 30-40% of the country's population at the time of the 2009 outbreak. The metadata contains information about each phone call placed or recevied by users: who initiated, who received, timestamp, length, and the coordinates of the tower that recevied the connection.
 
+First, we extract features from the data, including unique locations visited, number of calls (outgoing and incoming), mean call duration, etc. We first observed that features varies in a weeklong cycle (as depicted, Friday is the highest and Sunday is the lowest). This leads to our need to control by day of the week, and thus we choose to rank each user against their past behavior for the same day of the week (we use the past 10 weeks). Another phenonmenon we observe is that major events (holidays) have a pronounced influence on human behavior. Models that fail to account for such major events often grossly mispredict. Seasonality also demonstrates influence on behavioral patterns. Colder months are asssociated with less movement and other feature changes. The data actually displays such influences!
 
+To control for these influences, we compare each individual's extracted feature value against their feature values from the same day of the week for the prior 10 weeks. We use fractional ranking and then linearly map these values to the range of [0,1] so each user has an equal footing. We then calcualte these values for each day relative to the user's date of diagnosis, plotting these on the 4-week period rangin from 2 weeks before diagnosis and 2 weeks after.
 
-
-## Sponsors
-
-
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
-</div>
-<div class="ui segments">
-  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
-</div>
 
 
 ## Publications
-
-
-Specifically, diagnosed individuals move less, talk longer, and make fewer phone calls in the few days around their diagnosis.
-
-
-
-
-<!--The data is from the 2009 outbreak of H1N1 in Iceland, where we have two datasets one containing cellphone metadata and the other dates of diagnosis. Anonymity is preserved through randomly generated user IDs which are used to map between the two datasets.-->
 
 <div class="ui segments">
   <div class="ui secondary segment">
@@ -78,3 +51,18 @@ Specifically, diagnosed individuals move less, talk longer, and make fewer phone
 
 
  
+
+## Sponsors
+
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Nvidia.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/Leverhulme.jpg"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/emory.png"/>
+</div>
+<div class="ui segments">
+  <img class="ui centered large rounded image" src="../resources/posts/cdr/rannis.jpg"/>
+</div>
