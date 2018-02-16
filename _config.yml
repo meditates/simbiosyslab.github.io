@@ -87,9 +87,9 @@ members:
     photo: /resources/profiles/empty.png
     meta: BS student
   - name: James Robb
-    website: https://simbiosyslab.github.io
-    photo: /resources/profiles/empty.png
-    meta: MS student
+    website: http://www.jamesrobb.ca
+    photo: /resources/profiles/jamesrobb.png
+    meta: BS student
   - name: Sandra Bender
     website: https://simbiosyslab.github.io
     photo: /resources/profiles/empty.png
