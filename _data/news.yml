@@ -2,7 +2,6 @@
 
 # Build settings
 markdown: kramdown
-permalink: /:news
 
 
 
