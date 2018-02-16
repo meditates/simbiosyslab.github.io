@@ -40,11 +40,11 @@ Our system leverages the idea of filtering out the messages being published into
 
 
 ## People
-<div class="ui segments four centered doubling cards" style="padding:25px;">
+<div class="ui four centered doubling cards" style="padding:25px;">
 
  <a href="https://www.mathcs.emory.edu/~rkarimi/" class="fluid card">
     <div class="image">
-      <img style="width:100px; height:100px; margin-botton:-50px; border-radius: 100% !important" src="../resources/profiles/reza.jpg"/>
+      <img style="width:100px; height:100px border-radius: 100% !important" src="../resources/profiles/reza.jpg"/>
     </div>
     <div class="content">
       <div class="header">Reza Karimi</div>
@@ -53,17 +53,16 @@ Our system leverages the idea of filtering out the messages being published into
   
    <a href="http://www.gchockler.com/" class="fluid card">
     <div class="image">
-      <img style="width:100px; height:100px; margin-botton:-50px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/>
+      <img style="width:100px; height:100px; border-radius: 100% !important" src="https://pure.royalholloway.ac.uk/portal/files/10508164/me.jpg"/>
     </div>
     <div class="content">
       <div class="header">Gregory Chockler</div>
-  Royal Holloway University of London
     </div>
   </a>
   
    <a href="https://ymsir.com" class="fluid card">
     <div class="image">
-      <img style="width:100px; height:100px; margin-botton:-50px; border-radius: 100% !important" src="../resources/profiles/ymir.jpg"/>
+      <img style="width:100px; height:100px; border-radius: 100% !important" src="../resources/profiles/ymir.jpg"/>
     </div>
     <div class="content">
       <div class="header">Ymir Vigfusson</div>
