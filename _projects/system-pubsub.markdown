@@ -39,9 +39,9 @@ Our system leverages the idea of filtering out the messages being published into
 ## People
 <div class="ui four centered doubling cards" style="padding:25px;">
 
- <a href="https://www.mathcs.emory.edu/~rkarimi/" class="fluid card">
+ <a href="http://0xreza.com" class="fluid card">
     <div class="image">
-      <img style="width:100%;" src="../resources/profiles/reza.jpg"/>
+      <img style="width:100%;" src="../resources/people/reza.jpg"/>
     </div>
     <div class="content">
       <div class="header">Reza Karimi</div>
@@ -59,13 +59,12 @@ Our system leverages the idea of filtering out the messages being published into
 
    <a href="https://ymsir.com" class="fluid card">
     <div class="image">
-      <img style="width:100%;" src="../resources/profiles/ymir.jpg"/>
+      <img style="width:100%;" src="../resources/people/ymir.jpg"/>
     </div>
     <div class="content">
       <div class="header">Ymir Vigfusson</div>
     </div>
   </a>
-
 
 </div>
 
