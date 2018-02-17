@@ -4,7 +4,9 @@ title:
 permalink: prospectiveStudent.html
 ---
 
-### Postdocs
+
+
+### Prospective Students
 
 >   Postdocs, hmm, Ymir and Avani fill me!
 
