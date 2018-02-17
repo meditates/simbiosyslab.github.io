@@ -85,11 +85,17 @@ current:
     desc:
     url:
 
+  - type: university
+    name: University of London, Royal Holloway
+    logo: /resources/partners/royalholloway.png
+    desc:
+    url:
+
 
 
 past:
   - type: university
-    name: Mehash @ Yale
+    name: Mahesh @ Yale
     logo: /resources/partners/yale.png
     desc:
     url:
