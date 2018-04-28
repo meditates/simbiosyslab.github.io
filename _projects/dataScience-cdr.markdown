@@ -5,21 +5,23 @@ abstract:
 title: Predicting Epidemics Through Cellphone Metadata
 date: 2017-06-1 12:00:00
 authors:
+  - Thorgeir A. Karlsson
   - Atli F. Einarsson
   - Derek Onken
-  - Thorgeir A. Karlsson
+  - Rebecca Mitchell
   - Ymir Vigfusson
 keywords:
   - Cellphone Metadata
-  - Epidemics
-  - Behavior Analysis
+  - Call Detail Records
+  - Epidemiological Surveillance
+  - Behavioral Analysis
 ---
 
 ### Keywords: Cellphone Metadata, Epidemics, Behavior Analysis
 
 ## What is it?
 
-Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detailed records provided by Siminn, Iceland's largest mobile network operator, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
+Epidemics cause significant tolls financially and on the population. [Influenza A](https://en.wikipedia.org/wiki/Influenza) alone is responsible for some of the deadliest outbreaks in the past century. Effective outbreak containment and eradication requires quick detection. Traditional detection methods occupy weeks or require active participation by population members. By using mobile phones as behavioral sensors, a novel real-time outbreak detection method can exist. This method depends on two assumptions: population members actually alter activity while sick and mobile phone metadata collected passively can quantifiably capture this behavioral change. With the 2009 H1N1 outbreak in Iceland as a use case, we use call-detail records (CDR) provided by a large mobile network operator (MNO) in Iceland, to observe that diagnosed individuals do indeed alter behavior. Furthermore, we aim to build a model that uses this behavior change to estimate the number of sick individuals in a population.
 
 ## Our Goal
 
@@ -27,7 +29,7 @@ The goal of this project is to improve the state of the art in epidemic surveill
 
 ## Approach
 
-A large mobile network operator in Iceland provided us with cellphone metadata, during the 2009 H1N1 pandemic. CHS-CDC, Iceland's centralized healthcare system, recorded all diagnoses for Influenza-like Illness. Iceland's Data Protection Authority (Personuvernd) performed a double-blind join on the data to preserve anonymity of users. Siminn covered 30-40% of the country's population at the time of the 2009 outbreak. The metadata contains information about each phone call placed or recevied by users: who initiated, who received, timestamp, length, and the coordinates of the tower that recevied the connection.
+We obtained anonymized cellphone metadata during the 2009 H1N1 pandemic. CHS-CDC operates a centralized database of diagnoses in Iceland and performed a blinded join between our data and recorded cases of Influenza-Like Illness (ILI) diagnosis during the outbreak. The call data covers 30-40% of the country's population at the time of the 2009 outbreak. The metadata contains information about each phone call placed or received by users: who initiated, who received, timestamp, length, and the coordinates of the tower that received the connection.
 
 First, we extract features from the data, including unique locations visited, number of calls (outgoing and incoming), mean call duration, etc. We first observed that features varies in a weeklong cycle (as depicted, Friday is the highest and Sunday is the lowest). This leads to our need to control by day of the week, and thus we choose to rank each user against their past behavior for the same day of the week (we use the past 10 weeks). Another phenonmenon we observe is that major events (holidays) have a pronounced influence on human behavior. Models that fail to account for such major events often grossly mispredict. Seasonality also demonstrates influence on behavioral patterns. Colder months are asssociated with less movement and other feature changes. The data actually displays such influences!
 
@@ -39,7 +41,7 @@ To control for these influences, we compare each individual's extracted feature 
 
 <div class="ui segments">
   <div class="ui secondary segment">
-    This graph shows the nr. of unique locations users visit on different days around their date of diagnosis.
+    This graph shows the number of unique locations users visit on different days around their date of diagnosis.
   </div>
   <div class="ui segment">
     <img class="ui centered large rounded image" style="width: 700px; height: 500px;" src="../resources/projects/cdr/unique_locations_visited_bin0.png"/>
