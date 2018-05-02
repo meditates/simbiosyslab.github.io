@@ -39,7 +39,7 @@ To control for these influences, we compare each individual's extracted feature 
 
 ## Publications
 
-<iframe width="600" height="400" frameborder="0" scrolling="no" src="//plot.ly/~thorgeirk11/2439.embed"></iframe>
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~thorgeirk11/2439.embed"></iframe>
 
 <div class="ui segments">
   <div class="ui secondary segment">
