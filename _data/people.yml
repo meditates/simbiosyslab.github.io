@@ -75,6 +75,11 @@ phd:
     website: https://www.linkedin.com/in/bhandaripranav
     photo: /resources/people/pranav.jpg
     meta: 
+  - name: James Robb
+    website: http://www.jamesrobb.ca
+    photo: /resources/people/jamesrobb.png
+    meta:
+
 
 
 ms:
@@ -105,8 +110,4 @@ ugrad:
   #   website: https://www.linkedin.com/in/yuan-li-770a64113/
   #   photo: /resources/people/empty.png
   #   meta:
-  - name: James Robb
-    website: http://www.jamesrobb.ca
-    photo: /resources/people/jamesrobb.png
-    meta:
 
