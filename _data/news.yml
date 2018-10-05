@@ -7,6 +7,19 @@ markdown: kramdown
 
 
 newslist:
+
+  - event:
+    loc:
+    date: 09/25/2018
+    person: Prof. Avani Wildani
+    desc: <b> Prof. Avani Wildani </b> co-chaired <b> MASCOTS'18 </b> in Milwaukee,WI.
+    
+  - event:
+    loc:
+    date: 09/01/2018
+    person: Prof. Avani Wildani
+    desc: <b> Prof. Avani Wildani </b> was awarded a <b> URC Grant </b> to study data management and imputation for modeling air pollution using aerosol optical depth.
+
   - event:
     loc:
     date: 03/12/2018
