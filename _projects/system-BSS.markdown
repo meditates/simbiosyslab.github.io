@@ -25,12 +25,12 @@ posit that they are amenable to blind source separation techniques such as indep
 
 Approaches
 ----------
-For the sake of demonstration, we use PID as a ground truth indicator of workload label. To further simplify the problem, we removed accesses that did not correspond to one of the top 10 PIDs. All source traces were converted to signals, centered, whitened, and mixed using a mixing matrix of full rank. We use several ICA algorithms to recover the source signals, such as FastICA, JADE, SOBI. To validate, we calculate MSE between the recovered signals and the true source signals.
+For the sake of demonstration, we use PID as a ground truth indicator of workload label. To further simplify the problem, we removed accesses that did not correspond to one of the top 10 PIDs. All source traces were converted to signals, centered, whitened, and mixed using a mixing matrix of full rank. We use several ICA algorithms to recover the source signals, such as FastICA, JADE, SOBI. To validate, we calculate Mean Square Error (MSE) between the recovered signals and the true source signals.
 
  
 
 result
 -------------
-Mixes of I/O workloads are separable using BSS techniques. Even though they run on the same hardware, PID signals are independent and leveraging the excess kurtosis shows very low error values. while PID is not a perfect indicator
+Mixes of I/O workloads are separable using BSS techniques. Even though they run on the same hardware, PID signals are independent and leveraging the excess kurtosis shows very low error values. While PID is not a perfect indicator
 of workload, we are specifically looking for functional groups of signals.
 <img class="ui centered large rounded image" style="width: 640px; height: 300px;" src="../resources/projects/BSS/bss_10min_vs_1hr.png"/>
